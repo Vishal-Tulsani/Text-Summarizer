@@ -2,6 +2,8 @@ from nltk import sent_tokenize
 import nltk
 import heapq
 
+nltk.download()
+
 def summary(data):
   #  f = open(file, encoding="utf8")
   #  data=f.read()
