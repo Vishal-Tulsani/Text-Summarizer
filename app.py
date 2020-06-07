@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route('/',methods = ['POST'])
 
 def summarizer():
-    nltk.download()
+    nltk.download('punkt')
     file_data = request.args.get('data')
     
     return jsonify(summary(file_data))
