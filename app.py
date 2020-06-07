@@ -12,6 +12,7 @@ app = Flask(__name__)
 
 def summarizer():
     nltk.download('punkt')
+    nltk.download('stopwords')
     file_data = request.args.get('data')
     
     return jsonify(summary(file_data))
